@@ -10,12 +10,12 @@ public:
     float result = 1;
     for (int i = 0; i < exp; i++) result *= base;
     return result;
-}
+  }
     
     
     float divide(float a, float b) {
         if (b == 0) {
-            cout << "Error: Division by zero! ";
+            cout << "Error: Division by zero" << endl;
             return 0;
         }
         return a / b;
@@ -25,15 +25,11 @@ public:
 int main() {
     Calculator calc;
     float a, b;
-    
     cout << "Enter two numbers: ";
     cin >> a >> b;
-    
     cout << "Sum: " << calc.add(a, b) << endl;
     cout << "Difference: " << calc.subtract(a, b) << endl;
-    cout << "Product: " << calc.multiply(a, b) << endl;
     cout << "Power: " << calc.power(a, (int)b) << endl;
     cout << "Quotient: " << calc.divide(a, b) << endl;
-    
     return 0;
 }
