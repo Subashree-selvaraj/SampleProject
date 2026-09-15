@@ -1,1 +1,2 @@
 Git assignmentTODO: add percentage() next
+unrelated: refactor input parsing later
