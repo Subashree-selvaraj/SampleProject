@@ -8,12 +8,10 @@ public:
     float subtract(float a, float b) { return a - b; }
     float multiply(float a, float b) { return a * b; }
     float power(float base, int exp) {
-    float result = 1;
-    for (int i = 0; i < exp; i++) result *= base;
-    return result;
-  }
-    
-
+        float result = 1;
+        for (int i = 0; i < exp; i++) result *= base;
+        return result;
+    }
     
     float divide(float a, float b) {
         if (b == 0) {
@@ -27,6 +25,8 @@ public:
     }
 
     float squareRoot(float a) { return sqrt(a); }
+
+    float percentage(float a, float b) { return a * (b / 100); }
 };
 
 int main() {
@@ -40,5 +40,6 @@ int main() {
     cout << "Quotient: " << calc.divide(a, b) << endl;
     cout << "Remainder: " << calc.remainder(a, b) << endl;
     cout << "Square Root of first number: " << calc.squareRoot(a) << endl;
+    cout << "Percentage: " << calc.percentage(a, b) << endl;
     return 0;
 }
