@@ -12,6 +12,7 @@ public:
     return result;
   }
     
+
     
     float divide(float a, float b) {
         if (b == 0) {
@@ -19,6 +20,9 @@ public:
             return 0;
         }
         return a / b;
+    }
+    int remainder(float a, float b) {
+        return (int)a % (int)b;
     }
 };
 
