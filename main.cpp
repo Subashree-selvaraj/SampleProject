@@ -5,12 +5,12 @@ class Calculator {
 public:
     float add(float a, float b) { return a + b; }
     float subtract(float a, float b) { return a - b; }
-    float multiply(float a, float b) { return a * b; }
-    
-    
+    int remainder(float a, float b) {
+        return (int)a % (int)b;
+    }
     float divide(float a, float b) {
         if (b == 0) {
-            cout << "Error: Division by zero! ";
+            cout << "Error: Division by zero" << endl;
             return 0;
         }
         return a / b;
@@ -20,14 +20,13 @@ public:
 int main() {
     Calculator calc;
     float a, b;
-    
     cout << "Enter two numbers: ";
     cin >> a >> b;
-    
     cout << "Sum: " << calc.add(a, b) << endl;
     cout << "Difference: " << calc.subtract(a, b) << endl;
+
     cout << "Product: " << calc.multiply(a, b) << endl;
     cout << "Quotient: " << calc.divide(a, b) << endl;
-    
+    cout << "Remainder: " << calc.remainder(a, b) << endl;
     return 0;
 }
