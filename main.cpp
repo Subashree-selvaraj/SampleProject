@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 class Calculator {
@@ -24,6 +25,8 @@ public:
     int remainder(float a, float b) {
         return (int)a % (int)b;
     }
+
+    float squareRoot(float a) { return sqrt(a); }
 };
 
 int main() {
@@ -36,5 +39,6 @@ int main() {
     cout << "Power: " << calc.power(a, (int)b) << endl;
     cout << "Quotient: " << calc.divide(a, b) << endl;
     cout << "Remainder: " << calc.remainder(a, b) << endl;
+    cout << "Square Root of first number: " << calc.squareRoot(a) << endl;
     return 0;
 }
