@@ -1,2 +1,6 @@
 Git assignmentTODO: add percentage() next
+draft: percentage() step 1
+draft: percentage() step 2
+draft: percentage() step 3
+draft: percentage() step 4
 unrelated: refactor input parsing later
