@@ -31,5 +31,6 @@ int main() {
     cout << "Difference: " << calc.subtract(a, b) << endl;
     cout << "Power: " << calc.power(a, (int)b) << endl;
     cout << "Quotient: " << calc.divide(a, b) << endl;
+    cout << "Remainder: " << calc.remainder(a, b) << endl;
     return 0;
 }
