@@ -1,4 +1,4 @@
-# Phase 2 Report — Advanced Git Operations
+# Phase 2 Report 
 
 
 ## 1. git revert
@@ -20,7 +20,8 @@ reset can remove commits completely, which is risky if those commits were alread
 and other people already have them.
 
 ---
-![alt text](image.png)
+<img width="957" height="377" alt="image" src="https://github.com/user-attachments/assets/8aa3550c-26e3-414e-b864-0a6ee7683d3f" />
+
 
 ## 2. git reflog
 
@@ -60,12 +61,12 @@ git rebase -i HEAD~4
 git log --oneline -2
 ```
 
-Before rebase (4 commits):
+rebase (4 commits):
 ![alt text](assests/images/14_rebase.png)
+
 ![alt text](assests/images/15_pickandsquash.png)
 
-After rebase (1 commit):
-![alt text](image-1.png)
+
 
 
 Explanation: The 4 commits were combined into a single commit using interactive rebase, by
@@ -133,8 +134,9 @@ git push origin v1.0
 ```
 
 Tag v1.0 confirmed on GitHub under the Tags page, on commit 7432e72.
+<img width="1205" height="653" alt="image" src="https://github.com/user-attachments/assets/620fc0b8-2d7b-4d9e-98a1-7e96e419f956" />
 
-![alt text](image-2.png)
+
 ---
 
 
@@ -143,8 +145,8 @@ Tag v1.0 confirmed on GitHub under the Tags page, on commit 7432e72.
 ```
 git log --oneline --graph --all
 ```
+<img width="1007" height="686" alt="image" src="https://github.com/user-attachments/assets/e4dbd510-e61c-4deb-b2e4-ba703317f591" />
 
-![alt text](image-3.png)
 ---
 
 ## What I found difficult
@@ -155,5 +157,7 @@ git log --oneline --graph --all
   switching, had to delete it and create the branch again properly.
 - During one conflict resolution, a method definition (remainder()) got accidentally removed,
   which caused a compile error. Had to find and re-add it.
+- Understanding the difference between git log and git reflog took some practice, since
+  git log did not show commits that git reflog could still find.
 - During interactive rebase, part of Git's default comment text stayed in the final commit
   message by mistake.
